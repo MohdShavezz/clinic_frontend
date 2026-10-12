@@ -1,0 +1,61 @@
+.patient-record-page{display:grid;gap:18px}
+.patient-record-back{justify-self:start;margin:-4px 0}
+.patient-record-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.patient-record-identity{display:flex;align-items:center;gap:15px;min-width:0}
+.patient-record-avatar{width:56px;height:56px;flex:none;font-size:17px}
+.patient-record-identity h1{margin:4px 0;font-size:27px;line-height:1.15;color:var(--ink)}
+.patient-record-identity p{margin:0;color:var(--muted);font-size:12px}
+.patient-record-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.patient-record-actions .clinic-button{min-height:37px}
+.patient-record-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px}
+.patient-record-summary>div{display:grid;align-content:start;gap:6px;min-width:0}
+.patient-record-summary span{font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#87969c}
+.patient-record-summary strong{font-size:12px;font-weight:600;color:#334c58;overflow-wrap:anywhere}
+.patient-record-summary .patient-record-remark{grid-column:1/-1;border-top:1px solid #edf1f2;padding-top:12px}
+.patient-record-remark p{margin:0;color:#445b65;white-space:pre-wrap;line-height:1.6;font-size:12px}
+.patient-comparison-panel{overflow:hidden}
+.patient-comparison-panel>.clinic-panel-heading{padding:18px 20px 12px}
+.patient-comparison-panel .clinic-panel-heading h2,.patient-history-heading h2{margin:0;color:#304b58;font-size:16px}
+.patient-comparison-panel .clinic-panel-heading p,.patient-history-heading p{margin:5px 0 0;color:#87969c;font-size:10px;line-height:1.5}
+.patient-comparison-scroll{overflow:auto;border-top:1px solid #edf1f2}
+.patient-comparison-table{width:100%;min-width:max-content;border-collapse:separate;border-spacing:0;font-size:11px}
+.patient-comparison-table th,.patient-comparison-table td{min-width:150px;padding:12px;border-right:1px solid #edf1f2;border-bottom:1px solid #edf1f2;text-align:left;vertical-align:top}
+.patient-comparison-table thead th{background:#f8fafb;color:#4b616a;font-weight:600}
+.patient-comparison-table thead th:first-child,.patient-comparison-table tbody th{position:sticky;left:0;z-index:1;min-width:140px;background:#f8fafb}
+.patient-comparison-table tbody th{background:#fff;color:#405963;font-size:11px;font-weight:700}
+.patient-comparison-table thead th strong,.patient-comparison-table thead th span,.patient-comparison-table thead th small{display:block}
+.patient-comparison-table thead th span{margin-top:5px;color:#71838a;font-size:10px;font-weight:500}
+.patient-comparison-table thead th small{margin-top:3px;color:#9aa6aa;font-size:9px;font-weight:500}
+.patient-comparison-table td>strong{display:block;color:#2c505a;font-size:13px}
+.patient-comparison-table td>strong small{font-size:10px;font-weight:500;color:#71838a}
+.patient-result-reference,.patient-result-delta{display:block;margin-top:5px;color:#87969c;font-size:9px;white-space:normal}
+.patient-result-delta{color:#547879}
+.patient-result-empty{color:#a6b0b3}
+.patient-comparison-empty{padding:24px 20px;color:#87969c;font-size:11px;border-top:1px solid #edf1f2}
+.patient-history-section{display:grid;gap:12px}
+.patient-history-heading{padding:0 2px}
+.patient-history-timeline{display:grid;gap:12px}
+.patient-history-event{display:grid;grid-template-columns:38px minmax(0,1fr);gap:14px;padding:18px}
+.patient-history-icon{width:36px;height:36px;border-radius:11px;display:grid;place-items:center}
+.patient-history-icon svg{width:19px;height:19px}
+.patient-history-icon.consultation{background:#edf4ff;color:#5379b4}
+.patient-history-icon.report{background:#eaf7f3;color:#138276}
+.patient-history-event-body{min-width:0}
+.patient-history-event-title{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
+.patient-history-event-title h3{margin:4px 0 2px;font-size:15px;color:#304b58}
+.patient-history-event-title p{margin:0;color:var(--muted);font-size:11px}
+.patient-history-event-title time{flex:none;color:#71828b;font-size:11px}
+.patient-history-event .clinic-notes{margin:8px 0;color:#405963;line-height:1.65;white-space:pre-wrap}
+.patient-history-followup{margin:8px 0;color:#60747c;font-size:11px}
+.patient-history-followup strong{color:#35545f}
+.patient-history-tests{display:grid;gap:7px;margin-top:11px}
+.patient-history-tests>strong{font-size:10px;color:#71838a;text-transform:uppercase;letter-spacing:.04em}
+.patient-history-muted{font-size:11px;color:#8a999e}
+.patient-history-link{display:inline-block;margin-top:11px;color:var(--teal);font-size:11px;font-weight:600;text-decoration:none}
+.patient-history-link:hover{text-decoration:underline}
+.patient-history-event .clinic-results-grid{margin:10px 0}
+.clinic-patient-name-button{padding:0;border:0;background:transparent;color:var(--ink);font:inherit;font-size:inherit;font-weight:700;text-align:left;cursor:pointer}
+.clinic-patient-name-button:hover{color:var(--teal);text-decoration:underline}
+.clinic-patient-remark-preview{display:block;max-width:210px;margin-top:4px;color:#74868d;font-size:10px;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:760px){.patient-record-heading{align-items:flex-start;flex-direction:column}.patient-record-actions{justify-content:flex-start}.patient-record-summary{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.patient-record-identity h1{font-size:22px}.patient-record-avatar{width:46px;height:46px}.patient-record-actions{width:100%}.patient-record-actions .clinic-button{flex:1;justify-content:center;padding:0 9px;font-size:10px}.patient-record-summary{padding:13px;gap:13px}.patient-history-event{grid-template-columns:30px minmax(0,1fr);gap:10px;padding:13px}.patient-history-icon{width:30px;height:30px}.patient-history-event-title{display:block}.patient-history-event-title time{display:block;margin-top:6px}}
